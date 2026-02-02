@@ -1,0 +1,27 @@
+[build]
+  command = "hugo --gc --minify"
+  publish = "public"
+
+[build.environment]
+  HUGO_VERSION = "0.155.2"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+
+[context.production.environment]
+  HUGO_VERSION = "0.155.2"
+
+# Настройки заголовков для кэширования и безопасности
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Настройки для рендеринга
+[context.deploy-preview]
+  command = "hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL}"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL}"
