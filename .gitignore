@@ -1,0 +1,19 @@
+# Hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+.hugo_build.lock
+
+# Сборка сайта
+public/
+
+# Операционные системы
+.DS_Store
+Thumbs.db
+
+# Редакторы
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
