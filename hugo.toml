@@ -1,0 +1,101 @@
+baseURL = 'https://burachevskiy.ru/'
+title = 'Бурачевский Николай Викторович | Прикладная биология молока'
+theme = 'PaperMod'
+
+# Критические SEO настройки
+enableRobotsTXT = true
+googleAnalytics = ""
+metaDataFormat = "yaml"
+summaryLength = 30
+timeout = "60s"
+
+# Пагинация - новый синтаксис
+[pagination]
+  pagerSize = 10
+
+[params]
+  # Основные SEO параметры
+  title = "Бурачевский Николай Викторович"
+  description = "Ученый в области прикладной биологии молока и молочных продуктов. Исследования, микробиология, технологии производства молочных продуктов. Научный подход от фундаментальных механизмов до промышленной реализации."
+  
+  # Ключевые слова В ТОЧНОМ порядке важности
+  keywords = ["Бурачевский Николай Викторович", "прикладная биология молока", "биология молочных продуктов", "микробиология молока", "технологии производства молочных продуктов", "исследования молока", "молоко как биологическая система", "научные решения молочной промышленности", "ученый по молочным продуктам", "биохимия молока", "промышленное производство молочных продуктов", "Бурачевский молоко", "молочная отрасль наука"]
+  
+  # Главная страница
+  homeInfoParams = { Title = "Бурачевский Николай Викторович", Content = "Ученый в области прикладной биологии молока и молочных продуктов. Исследования, микробиология и технологии производства. Научный подход к молочной отрасли — от фундаментальных механизмов до промышленной реализации." }
+  
+  # Внешний вид
+  defaultTheme = 'auto'
+  ShowShareButtons = true
+  ShowReadingTime = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  
+  # Авторство
+  author = "Бурачевский Николай Викторович"
+  authorEmail = "n.burachevskiy@example.com"
+  
+  # Open Graph
+  images = ["/images/og-image.jpg"]
+  defaultImage = "/images/photo.jpg"
+
+# Структура сайта
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "Об ученом"
+    url = "/about/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "research"
+    name = "Исследования"
+    url = "/research/"
+    weight = 15
+  
+  [[menu.main]]
+    identifier = "publications"
+    name = "Публикации"
+    url = "/publications/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "blog"
+    name = "Научный блог"
+    url = "/blog/"
+    weight = 30
+  
+  [[menu.main]]
+    identifier = "projects"
+    name = "Проекты"
+    url = "/projects/"
+    weight = 35
+  
+  [[menu.main]]
+    identifier = "contact"
+    name = "Контакты"
+    url = "/contact/"
+    weight = 40
+
+# Язык и локализация
+[languages]
+  [languages.ru]
+    languageCode = 'ru-ru'
+    languageName = 'Русский'
+    weight = 1
+    title = "Бурачевский Николай Викторович | Прикладная биология молока"
+    
+    [languages.ru.params]
+      description = "Ученый в области прикладной биологии молока и молочных продуктов. Исследования, микробиология, технологии производства."
+
+# Карта сайта
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 1.0
+
+# Таксономии для блога
+[taxonomies]
+  tag = "tags"
+  category = "categories"

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://burachevskiy.ru/sitemap.xml
+
+# Разрешаем индексацию всего, кроме черновиков
+Disallow: /draft/
