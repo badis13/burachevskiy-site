@@ -88,3 +88,9 @@ timeout = "60s"
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+# Статические файлы
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"

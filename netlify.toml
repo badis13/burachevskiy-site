@@ -25,3 +25,8 @@
 
 [context.branch-deploy]
   command = "hugo --gc --minify --baseURL ${DEPLOY_PRIME_URL}"
+
+[[redirects]]
+  from = "/yandex_a95cb1a3b20255f4.html"
+  to = "/yandex-verification.html"
+  status = 200
