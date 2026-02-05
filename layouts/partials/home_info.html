@@ -1,0 +1,26 @@
+{{- $Profile := .Site.Params.homeInfoParams }}
+{{- if $Profile }}
+<div class="home-info">
+    {{- if $Profile.Title }}
+    <h1>{{ $Profile.Title }}</h1>
+    {{- end }}
+
+    <div style="margin: 30px 0;">
+        {{- if $Profile.Content }}
+        {{ $Profile.Content | markdownify }}
+        {{- end }}
+    </div>
+</div>
+{{- end }}
+
+<!-- КАРТИНКА ПО ЦЕНТРУ -->
+<div style="text-align: center; margin: 40px 0;">
+  <div style="display: inline-block; max-width: 300px;">
+    <img src="/images/photo.png" 
+         alt="Исследования в области прикладной биологии молока"
+         style="width: 100%; border-radius: 10px; border: 2px solid #4a6fa5; padding: 5px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <p style="color: #666; font-size: 0.9em; margin-top: 8px;">
+      Исследования молока
+    </p>
+  </div>
+</div>
