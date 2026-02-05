@@ -99,3 +99,6 @@ timeout = "60s"
 [taxonomies]
   tag = "tags"
   category = "categories"
+
+[params]
+  homeProfilePartial = "home/profile-with-photo.html"
