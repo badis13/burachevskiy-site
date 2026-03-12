@@ -6,13 +6,13 @@ date: 2025-02-06
 
 ## Контакты для связи
 
-**Электронная почта для деловой переписки:** `nburachevskiy_ekb@vk.com`
+**Электронная почта для деловой переписки:** ``
 
 ### Публичные профили и социальные сети:
 
 - **Telegram канал о биологии молока:** [https://t.me/burachevskiy_nikolay](https://t.me/burachevskiy_nikolay)
 - **Научный блог на Яндекс.Дзен:** [https://dzen.ru/burachevskiy_nikolay](https://dzen.ru/burachevskiy_nikolay)
-- **Профиль ВКонтакте:** [https://vk.com/id1097768913](https://vk.com/id1097768913)
+- **Профиль ВКонтакте:** [https://vk.ru/id1102734657](https://vk.ru/id1102734657)
 - **Блог на LiveJournal (ЖЖ):** [https://burachevskiy-n.livejournal.com/](https://burachevskiy-n.livejournal.com/)
 
 ### Направления для сотрудничества:
