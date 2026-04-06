@@ -22,4 +22,4 @@ description: "В этой статье я описываю вопросы лак
 #    ![Биология молока](/images/5.png "Биология молока")
 
 *   Бурачевский Н.В. *Биология молока.* 2026.
-*   [Ссылка на внешний источник](https://burachevskiy-n.livejournal.com/)
+*   [Ссылка на внешний источник](https://agvu.urgau.ru/images/Agricultural_Journal/2024/6-2024/5-6-2024.pdf?ysclid=mn6zxm9gqo864990480)
