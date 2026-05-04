@@ -8,12 +8,12 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v5
       with:
         submodules: true   # подтягиваем тему PaperMod, если она подключена как субмодуль
 
     - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v3
+      uses: peaceiris/actions-hugo@v3.0.0
       with:
         hugo-version: '0.155.2'
         extended: true
@@ -21,15 +21,14 @@ jobs:
     - name: Build site
       run: hugo --minify
 
-    - name: Deploy to Yandex Cloud (S3)
-      uses: yc-actions/yc-obj-storage-upload@v2
-      env:
-        AWS_S3_BUCKET: burachevskiy.ru
-        AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
-        AWS_SECRET_ACCESS_KEY: ${{ secrets.YC_SECRET_ACCESS_KEY }}
-        AWS_REGION: ru-central1
-        AWS_S3_ENDPOINT: https://storage.yandexcloud.net
-        SOURCE_DIR: public
-        DEST_DIR: /
-        DELETE: true
-        FLAGS: --acl public-read
+    - name: Upload to Yandex Cloud
+  uses: yc-actions/yc-obj-storage-upload@v2
+  with:
+    bucket: burachevskiy.ru
+    access-key: ${{ secrets.YC_ACCESS_KEY_ID }}
+    secret-key: ${{ secrets.YC_SECRET_ACCESS_KEY }}
+    path: public
+    grant: public-read
+    endpoint: storage.yandexcloud.net
+    region: ru-central1
+    delete: true
