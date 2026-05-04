@@ -21,14 +21,18 @@ jobs:
     - name: Build site
       run: hugo --minify
 
-    - name: Upload to Yandex Cloud
-      uses: yc-actions/yc-obj-storage-upload@v2
-      with:
-        bucket: burachevskiy.ru
-        access-key: ${{ secrets.YC_ACCESS_KEY_ID }}
-        secret-key: ${{ secrets.YC_SECRET_ACCESS_KEY }}
-        path: public
-        grant: public-read
-        endpoint: storage.yandexcloud.net
-        region: ru-central1
-        delete: true
+    - name: Install AWS CLI
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y awscli
+
+    - name: Deploy to Yandex Cloud
+      env:
+        AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.YC_SECRET_ACCESS_KEY }}
+        AWS_DEFAULT_REGION: ru-central1
+      run: |
+        aws s3 sync public/ s3://burachevskiy.ru/ \
+          --delete \
+          --acl public-read \
+          --endpoint-url https://storage.yandexcloud.net
