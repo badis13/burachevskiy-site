@@ -1,6 +1,7 @@
 baseURL = 'https://burachevskiy.ru/'
+relativeURLs = true
 title = 'Бурачевский Николай Викторович | Прикладная биология молока'
-theme = 'PaperMod'
+theme = "PaperMod"
 
 enableRobotsTXT = true
 metaDataFormat = "yaml"
