@@ -22,7 +22,7 @@ jobs:
       run: hugo --minify
 
     - name: Deploy to Yandex Cloud (S3)
-      uses: jakejarvis/s3-sync-action@master
+      uses: yc-actions/yc-obj-storage-upload@v2
       env:
         AWS_S3_BUCKET: burachevskiy.ru
         AWS_ACCESS_KEY_ID: ${{ secrets.YC_ACCESS_KEY_ID }}
