@@ -1,0 +1,10 @@
+/* Отступы между абзацами */
+.home-info p {
+  margin-bottom: 1.5em;
+  line-height: 1.6;
+}
+
+/* Первая строка с отступом */
+.home-info p:not(:first-of-type) {
+  text-indent: 2em;
+}

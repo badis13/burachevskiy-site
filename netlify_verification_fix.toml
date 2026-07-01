@@ -1,0 +1,10 @@
+# Добавляем в netlify.toml
+[[redirects]]
+  from = "/yandex_a95cb1a3b20255f4.html"
+  to = "/yandex-verification.html"
+  status = 200
+
+[[headers]]
+  for = "/yandex-verification.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

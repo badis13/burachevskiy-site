@@ -1,0 +1,77 @@
+baseURL = 'https://burachevskiy.ru/'
+relativeURLs = true
+title = 'Бурачевский Николай Викторович | Прикладная биология молока'
+theme = "PaperMod"
+
+enableRobotsTXT = true
+metaDataFormat = "yaml"
+summaryLength = 30
+
+[pagination]
+  pagerSize = 10
+
+[params]
+  title = "Бурачевский Николай Викторович"
+  description = "Предприниматель и исследователь в области прикладной биологии молока и молочных продуктов. Исследования, микробиология, технологии производства."
+  
+  homeInfoParams = { Title = "", Content = "" }
+
+  defaultTheme = 'auto'
+  ShowShareButtons = true
+  ShowReadingTime = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  
+  author = "Бурачевский Николай Викторович"
+  authorEmail = "n.burachevskiy@example.com"
+  
+  images = ["/images/photo.png"]
+  defaultImage = "/images/photo.png"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name = "Об исследователе"
+    url = "/about/"
+    weight = 10
+  
+  [[menu.main]]
+    identifier = "research"
+    name = "Исследования"
+    url = "/research/"
+    weight = 15
+  
+  [[menu.main]]
+    identifier = "publications"
+    name = "Публикации"
+    url = "/publications/"
+    weight = 20
+  
+  [[menu.main]]
+    identifier = "blog"
+    name = "Научный блог"
+    url = "/blog/"
+    weight = 30
+  
+  [[menu.main]]
+    identifier = "projects"
+    name = "Проекты"
+    url = "/projects/"
+    weight = 35
+  
+  [[menu.main]]
+    identifier = "contact"
+    name = "Контакты"
+    url = "/contact/"
+    weight = 40
+
+[languages]
+  [languages.ru]
+    languageCode = 'ru-ru'
+    languageName = 'Русский'
+    weight = 1
+    title = "Бурачевский Николай Викторович | Прикладная биология молока"
+    
+    [languages.ru.params]
+      description = "Предприниматель и исследователь в области прикладной биологии молока и молочных продуктов. Исследования, микробиология, технологии производства."

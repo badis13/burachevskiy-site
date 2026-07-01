@@ -1,0 +1,10 @@
+{
+  "name": "burachevskiy-site",
+  "version": "1.0.0",
+  "description": "Официальный сайт ученого Бурачевского Николая Викторовича",
+  "scripts": {
+    "build": "hugo --gc --minify"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
